@@ -73,6 +73,7 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish> implements Di
 
         // 2.更新菜品口味信息
         // 2.1 先删除原来的口味信息
+        //v
         LambdaQueryWrapper<DishFlavor> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(DishFlavor::getDishId,dishDto.getId());
         dishFlavorService.remove(queryWrapper);
