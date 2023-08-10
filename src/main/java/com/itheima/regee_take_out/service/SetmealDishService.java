@@ -1,4 +1,7 @@
 package com.itheima.regee_take_out.service;
 
-public interface SetmealDishService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import entity.SetmealDish;
+
+public interface SetmealDishService extends IService<SetmealDish>{
 }
